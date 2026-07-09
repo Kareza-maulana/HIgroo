@@ -115,28 +115,30 @@ input, select, textarea { font-family: var(--font); }
 .nav-container {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 3rem;
   height: 100%;
   display: flex;
   align-items: center;
-  gap: 2rem;
+  position: relative;
 }
 .nav-logo { flex-shrink: 0; }
 .logo-img { height: 40px; object-fit: contain; }
 .nav-links {
   display: flex;
   align-items: center;
-  gap: .30rem;
-  margin: 0 auto;
+  gap: .5rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   background: var(--dark);
-  padding: .35rem .45rem;
+  padding: .4rem .65rem;
   border-radius: var(--radius-pill);
 }
 .nav-link {
-  font-size: .85rem;
+  font-size: .87rem;
   font-weight: 500;
   color: rgba(255,255,255,.72);
-  padding: .45rem 1rem;
+  padding: .5rem 1.2rem;
   border-radius: var(--radius-pill);
   transition: all var(--transition);
 }
@@ -161,7 +163,7 @@ input, select, textarea { font-family: var(--font); }
 .hero-container {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 4rem 2rem 3rem;
+  padding: 1px 2rem 0rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
